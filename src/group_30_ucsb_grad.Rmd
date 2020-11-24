@@ -22,6 +22,7 @@ ucsb_grad<- read.csv(here("data", "ucsb_grad_data.csv")) %>%
 ggplot(ucsb_grad)+
   geom_col(aes(x = year_abbr, 
                y = domestic_enrollment,
-               fill = ethnicity))
+               fill = ethnicity), position = "fill")
+  
 ```
 
