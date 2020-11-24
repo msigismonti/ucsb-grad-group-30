@@ -1,0 +1,20 @@
+---
+title: "group_30_ucsb_grad.Rmd"
+author: "Morganne Sigismonti and Jannelle Gaun"
+date: "11/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+library(hexbin)
+```
+
+```{r}
+ucsb_grad<- read.csv(here("data", "ucsb_grad_data.csv")) %>% 
+  clean_names()
+```
+
